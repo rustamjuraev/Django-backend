@@ -1,2 +1,11 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+
+# Local environment variables (Never push your secrets!)
 .env
+
+# Databases (if you still have any local sqlite files)
+*.sqlite3
+
 .idea/
