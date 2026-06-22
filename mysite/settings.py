@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 load_dotenv()
-db_url = os.getenv("DATABASE_PASSWORD")
+db_url = os.getenv("PASSWORD")
 
 DATABASES = {
     'default': {
@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'poll_db',
         'USER': 'postgres',
         'PASSWORD': db_url,
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
